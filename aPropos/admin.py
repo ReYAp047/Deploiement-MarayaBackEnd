@@ -5,7 +5,7 @@ from aPropos.models import APropos
 
 class aProposAdmin(admin.ModelAdmin):
     def has_add_permission(self, request, obj=None):
-        return False
+        return True
     def has_delete_permission(self, request, obj=None):
-        return False
+        return True
 admin.site.register(APropos, aProposAdmin)
