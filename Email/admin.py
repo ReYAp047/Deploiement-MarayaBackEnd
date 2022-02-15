@@ -5,7 +5,7 @@ from Email.models import Email
 
 class emailAdmin(admin.ModelAdmin):
     def has_add_permission(self, request, obj=None):
-        return True
+        return False
     def has_delete_permission(self, request, obj=None):
-        return True
+        return False
 admin.site.register(Email, emailAdmin)

@@ -5,7 +5,7 @@ from django.contrib.admin.options import ModelAdmin
 from Facebook.models import Facebook
 class facobookAdmin(admin.ModelAdmin):
     def has_add_permission(self, request, obj=None):
-        return True
+        return False
     def has_delete_permission(self, request, obj=None):
-        return True
+        return False
 admin.site.register(Facebook, facobookAdmin)
